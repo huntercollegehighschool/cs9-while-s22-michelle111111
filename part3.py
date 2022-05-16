@@ -16,9 +16,12 @@ Average: 6.0
 '''
 num = int(input("Enter a number or enter 0 to stop:"))
 total = 0
+inputs = 0
 
 while num != 0:
   total = total + num
+  inputs = inputs + 1
   num = int(input("Enter a number or enter 0 to stop:"))
-    
+
+total = total / inputs 
 print("Average:", total)
